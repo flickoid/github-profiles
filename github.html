@@ -12,6 +12,7 @@
     </form>
 
     <main class="profile-container">
+    <template id="profile-template">
       <article class="profile">
         <section class="pic">
           <img src="https://avatars.githubusercontent.com/u/5008648?">
@@ -28,9 +29,11 @@
         </section>
         <br clear="all">
       </article>
+    </template>
     </main>
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="template_check.js"></script>
     <script>
       $(document).ready(function() {
         $('#add-profile').on('submit', function(event){
